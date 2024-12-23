@@ -1,4 +1,4 @@
-import { QRCodeSVG } from 'qrcode.react'
+
 import {qrt, qrg} from "@/assets";
 export function DonationSection() {
     const qrisData = qrt;
