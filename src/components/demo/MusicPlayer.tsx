@@ -5,10 +5,10 @@ import { motion } from 'framer-motion'
 import audio from "../../assets/audio/yt1s.com - Ta Là Của Nhau  Đông Nhi Ông Cao Thắng  Lyrics Video.mp3"
 
 export function MusicPlayer() {
-    const [isPlaying, setIsPlaying] = useState(true) // Default: tidak autoplay
+    const [isPlaying, setIsPlaying] = useState(false) // Default: tidak autoplay
     const [isMuted, setIsMuted] = useState(false)
     const [showInfo, setShowInfo] = useState(true)
-    const [userInteracted, setUserInteracted] = useState(true) // Flag untuk interaksi pengguna
+    const [userInteracted, setUserInteracted] = useState(false) // Flag untuk interaksi pengguna
     const audioRef = useRef<HTMLAudioElement>(null)
 
     // Show song info for 5 seconds
@@ -38,8 +38,8 @@ export function MusicPlayer() {
     }, [isMuted])
 
     const handleFirstInteraction = () => {
-        setUserInteracted(false) // Tandai interaksi pertama pengguna
-        setIsPlaying(false) // Mulai putar musik
+        setUserInteracted(true) // Tandai interaksi pertama pengguna
+        setIsPlaying(true) // Mulai putar musik
     }
 
     console.log(isPlaying, isMuted)

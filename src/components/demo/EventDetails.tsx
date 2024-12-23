@@ -12,7 +12,7 @@ export function EventDetails() {
         id: "ceremony",
         title: "Nhà Trai",
         date: "Ngày 01 Tháng 01 Năm 2025",
-        time: "9:00 PM - 10:00 PM",
+        time: "9:00 AM - 10:00 AM",
         venue: "Nhà Bà Nguyễn Thị Hà",
         address: "Xóm Minh Trung, Thôn Đa Phúc, Huyện Quốc Oai, TP.Hà Nội",
         details:
