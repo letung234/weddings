@@ -20,7 +20,7 @@ export function Carousel() {
     }, [])
 
     return (
-      <div className="relative w-full h-64 md:h-[58rem] overflow-hidden rounded-lg">
+      <div className="relative w-full h-[320px] md:h-[58rem] overflow-hidden rounded-lg">
         {images.map((image, index) => (
           <motion.div
             key={index}

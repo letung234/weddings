@@ -13,13 +13,13 @@ export function MusicPlayer() {
 
     // Show song info for 5 seconds
     useEffect(() => {
-        const infoTimeout = setTimeout(() => setShowInfo(false), 10000)
+        const infoTimeout = setTimeout(() => setShowInfo(false), 2000)
         return () => clearTimeout(infoTimeout)
     }, [])
 
     // Handle play/pause effect
     useEffect(() => {
-        if (audioRef.current && userInteracted) { // Hanya putar setelah interaksi pengguna
+        if (audioRef.current && userInteracted) {
             if (isPlaying) {
                 audioRef.current.play().catch(error => {
                     console.log("Playback failed:", error)
@@ -38,8 +38,8 @@ export function MusicPlayer() {
     }, [isMuted])
 
     const handleFirstInteraction = () => {
-        setUserInteracted(true) // Tandai interaksi pertama pengguna
-        setIsPlaying(true) // Mulai putar musik
+        setUserInteracted(false) // Tandai interaksi pertama pengguna
+        setIsPlaying(false) // Mulai putar musik
     }
 
     console.log(isPlaying, isMuted)
