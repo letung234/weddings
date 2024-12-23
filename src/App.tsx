@@ -37,7 +37,7 @@ export default function App() {
         <About />
         <CountdownTimer targetDate={new Date('2025-01-01T00:00:00')} />
         <EventDetails />
-        <CommentSection />
+        {/* <CommentSection /> */}
         <PhotoGallery />
         <DonationSection />
         {/* <BankAccounts /> */}

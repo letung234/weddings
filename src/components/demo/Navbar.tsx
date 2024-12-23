@@ -10,7 +10,7 @@ export function Navbar() {
       { name: "Giới Thiệu", href: "#about" },
       { name: "Chi Tiết Sự Kiện", href: "#event-details" },
       { name: "Địa Điểm", href: "#location" },
-      { name: "Gửi Lời Yêu Thương", href: "#comments" },
+      // { name: "Gửi Lời Yêu Thương", href: "#comments" },
       { name: "Gửi quà cưới", href: "#donate" },
     ];
 
